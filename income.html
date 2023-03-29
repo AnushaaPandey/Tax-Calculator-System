@@ -11,12 +11,12 @@
 <body>
     <section class="nav">
         <div class="logo">
-            <img src="splash.png" alt="Splash Screen">
+            <img src="splash1.png" alt="Splash Screen">
         </div>
 
-        <div class="main">
+        <!-- <div class="main">
             <h3>Tax Management System</h3>
-        </div>
+        </div> -->
 
         <div class="navbar">
             <a class="active" href="home.html">Home</a>
@@ -26,9 +26,12 @@
             <a href="setting.html">Settings</a>
         </div>
 
-        <div class="search">
+        <!-- <div class="search">
             <input type="search" name="uname" placeholder="Search"><br>
-        </div>
+        </div> -->
+
+        <input class="input" name="text" placeholder="Search..." type="search">
+        
 
         <div class="user">
             <img src="user.png" alt="User">
@@ -39,10 +42,10 @@
         <div class= "first">
             <label for="yearhead">Assessment Info</label>
             <select id="year">
-                <option value="volvo">F.Y. 2079-8</option>
-                <option value="saab">F.Y. 2076-2</option>
-                <option value="opel">F.Y. 2077-1</option>
-                <option value="audi">F.Y. 2078-7</option>
+                <option value="date">F.Y. 2079-8</option>
+                <option value="date">F.Y. 2076-2</option>
+                <option value="date">F.Y. 2077-1</option>
+                <option value="date">F.Y. 2078-7</option>
               </select>  
               <select id="gender">
                 <option value="male">Male</option>
@@ -57,16 +60,17 @@
     <section class="mainform">
         <div class="second">
             <div class="inputbox">
-                <span class="details">Monthly Salary </span>
+                <span class="details">Monthly Salary: </span>
                 <input type="text" placeholder="enter monthly salary" required>
             </div>
             <div class="inputbox">
-                <span class="details">Annual Gross Salary </span>
+                <span class="details">Annual Gross Salary: </span>
                 <input type="text" placeholder="enter gross salary" required>
             </div>
-            <div class="clear">
-                <input type= "button" onclick= "clearInput()" value= "Clear form">
-            </div>
+            <!-- <div class="clear">
+                <input type= "button"  value= "Clear form">
+            </div> -->
+            <button>Clear All</button>
             
         </div>
    
@@ -76,35 +80,32 @@
         </div>
 
         <div class="inputbox">
-            <span class="details">Life Insurance Premium </span>
+            <span class="details">Life Insurance Premium: </span>
             <input type="text" placeholder="life insurance" required>  
         </div>
         <div class="inputbox">
-            <span class="details">Health Insurance Premium </span>
+            <span class="details">Health Insurance Premium: </span>
             <input type="text" placeholder="health insurance" required>  
         </div>
         <div class="inputbox">
-            <span class="details">House Insurance Premium </span>
+            <span class="details">House Insurance Premium: </span>
             <input type="text" placeholder="house insurance" required>  
         </div>
         <div class="inputbox">
-            <span class="details">Other Allowance Detuction</span>
+            <span class="details">Medical Expenses:</span>
             <input type="text" placeholder="Other" required>  
         </div>
-        <div class="inputbox">
+        <!-- <div class="inputbox">
             <span class="details">Insurance</span>
             <input type="text" placeholder="insurance" required>  
-        </div>
-        <div class="tax">
+        </div> -->
+        <!-- <div class="tax">
             <button type="submit">Calculate Tax</button>
-        </div>
+        </div> -->
+        <button>Calculate Tax</button>
     </div>
     </section>
-    <script>
-        function clearInput() {
-            document.getElementById("Form").reset();
-        }
-    </script>
+        
 </body>
 </html>
 
