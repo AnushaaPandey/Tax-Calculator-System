@@ -165,22 +165,21 @@ padding-left: 248px;
     align-items: center; 
     margin-top: 20px;
  }
-
+/* adding syle to the question heading */
  .question
 {
 padding-left: 90px;
 margin-top: 25px;
 width: 50%;
-
 }
 
+/* adding width and height to the add question button */
 input[type=search]{
   width: 40%;
   height: 7vh;
 }
-
+/* faq heading  */
 .fa{
-    /* background-color: rgb(253, 144, 248);  */
      width: 13%;
      height: 23 vh;
      margin-left: 25px;
@@ -191,6 +190,7 @@ input[type=search]{
      margin-top: 20px;
   }
 
+  /* first question */
   .one{
     height: 10vh;
     width: 70%;

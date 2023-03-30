@@ -135,11 +135,11 @@ input:hover {
   outline: 1px solid lightgrey;
 }
 
-
+/* giving color to the body */
 body{
   background: linear-gradient(135deg, #657fb1, #f5f5f5 );  
 }
-
+/* styling the form part */
 .form{
   width: 100%;
   height: 9vh;
@@ -147,9 +147,8 @@ body{
   flex-direction: row;
   background: #ccdae6; 
 }
-
+/* adding style to the first box */
 .first{
- 
   width: 50%;
   height: 5vh;
   /* background-color: aqua; */
@@ -158,18 +157,18 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 18px;
-   
+  font-size: 18px;  
 }
 
+/* giving height for the option */
 #option{
   height: 5vh
 }
 
+/* giving style for the form */
 .mainform{
   width: 100%;
   height: 89vh;
-  
   display: flex;
   flex-direction: row;
   
@@ -264,9 +263,8 @@ button {
 
 
 
-
-.third{
-    
+/* styling the final form */
+.third{ 
   width: 45%;
   height: 70vh;
   background: #ccdae6;  
@@ -275,26 +273,15 @@ button {
   display: flex;
   justify-items: center;
   align-items: center;
-  
-   /* transform: translate(55%, 10%);     */
 }
-
+ /* adding style for the form heading */
 .one{
   font-size: 23px;
 }
 
-.tax{
-  width: 100%;
-  
-  display: flex;
-  justify-content: center;
-  
-}
-
+/* styling the button */
 button {
   background-color: #fcfcfc;
-  
-  /* color: rgb(99, 95, 95); */
   padding: 14px 15px;
   margin: 8px 0;
   border: none;

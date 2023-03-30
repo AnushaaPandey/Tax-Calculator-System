@@ -120,32 +120,12 @@ height:30px;
 
 }
 
-
-#search
-{
-
-width: 50%;
-padding:5px;
-font-size: 17px;
-border: 2px solid gray;
-border-radius: 9px;
-height: 60px;
-
-}
-.search
-{
-padding-left: 248px;
-}
-
 .type{
     background: #ccdae6; 
     height: 100vh;
     width: 100%;
 }
-
-
-
-
+ /* ading style to the heading */
 .first{
      /* background-color: bisque;    */
     text-align: left;
@@ -157,13 +137,10 @@ padding-left: 248px;
     justify-content: center;
     align-items: center; 
 }
-
-
+/* keeping all the button in same align and adding width and height to it */
 .ll{
-    
     width: 20%;
     height: 350px;
-     /* background-color: rgb(71, 68, 68);    */
     /* flex-direction: column; */
     display: flex;
     justify-content: left;
@@ -173,13 +150,12 @@ padding-left: 248px;
      /* transform: translate(55%, 10%);     */
 }
  
-
+/* first button */
 .b1
 {	
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    /* margin-left: 10px; */
 	 background-color: #fcfafa; 
 	height: 50px;
 	width: 150%;
@@ -187,11 +163,9 @@ padding-left: 248px;
 	/* background-repeat: no-repeat; */
 	border-radius: 6px;
 	box-shadow: rgba(0, 0, 0, 1.0); 
-	/* object-fit: fill; */
     margin: 10px 0; 
-    
-    /* transform: translate(-25%, 0%);  */
 }
+/* keeping hover's opacity low  */
 .b1:hover
 {
 	opacity: 0.6;

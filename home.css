@@ -4,7 +4,7 @@
     padding: 0px;
 
 }
-
+/* nav bar sizing */
 .nav
 {
 height: 75px;
@@ -17,7 +17,8 @@ align-items: center;
 background-color: #183955;
 /* position: fixed; */
 }
-
+ 
+/* style of the logo */
 .logo
 {
 width: 35%;
@@ -37,17 +38,8 @@ padding-right: 10px;
 {
 width:60%;
 height:55px;
-
 }
 
-/* .main{
-    color: white;
-    width: 24%;
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    float: center;
-} */
 
 .navbar {
     overflow: hidden;
@@ -59,8 +51,6 @@ height:55px;
     margin: auto;
     /* background-color: aqua; */
   }
-
-
 
   .input {
     max-width: 190px;
@@ -120,9 +110,7 @@ width:30%;
 height:30px;
 
 }
-
-
-
+ /* styling for the search button */
 .input {
   max-width: 190px;
   background-color: #f5f5f5;
@@ -144,30 +132,13 @@ input:focus {
 input:hover {
   outline: 1px solid lightgrey;
 }
-
-#search
-{
-
-width: 50%;
-padding:5px;
-font-size: 17px;
-border: 2px solid gray;
-border-radius: 9px;
-height: 60px;
-
-}
-.search
-{
-padding-left: 248px;
-}
-
+/* adding body with , height and colour  */
 .body{
     width: 100%;
     height: 89vh;
     /* background-color: #DAFFEF; */
     display: flex;
     flex-direction: row;
-   /* background: #acbfce;  */
    background: #ccdae6;  
 }
 
@@ -187,7 +158,6 @@ padding-left: 248px;
 }  
 
 .welcome{
-
   font-size: larger;
   margin-top: -350px;
   margin-left: -10px;
@@ -205,11 +175,6 @@ p{
  font-size: 25px;
  font: 1.2em sans-serif;
  word-spacing: 5px;
- 
- 
- 
- /* background-color: #5b5fc7; */
-
 } 
 
 
@@ -223,108 +188,16 @@ p{
     justify-content: center;
     align-items: center;
     margin-top: 120px; 
-    
+  
      /* transform: translate(55%, 10%);     */
 }
- 
-/* 
-.b1
-{	
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #fcfafa;
-	height: 50px;
-	width: 130%;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	border-radius: 6px;
-	box-shadow: rgba(0, 0, 0, 1.0); 
-	object-fit: fill;
-    margin: 10px 0;
-    
-    /* transform: translate(-25%, 0%);  */
-/* }
-.b1:hover
-{
-	opacity: 0.6;
-}
-.b1 a
-{
-	text-decoration: none;
-	color: rgb(0, 0, 0);
-}
-
-
-
-.b2
-{	
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: rgb(255, 255, 255);
-	height: 50px;
-	width: 130%;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	border-radius: 6px;
-	box-shadow: rgba(0, 0, 0, 1.0); 
-	object-fit: fill;
-    margin: 10px 0;
-    /* transform: translate(-25%, 0%);  */
-/* }
-.b2:hover
-{
-	opacity: 0.6;
-}
-.b2 a
-{
-	text-decoration: none;
-	color: rgb(0, 0, 0);
-}
-
-.b3
-{	
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: rgb(255, 255, 255);
-	height: 50px;
-	width: 130%;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	border-radius: 6px;
-	box-shadow: rgba(0, 0, 0, 1.0); 
-	object-fit: fill;
-    margin: 10px 0;
-
-}
-.b3:hover
-{
-	opacity: 0.6;
-}
-.b3 a
-{
-	text-decoration: none;
-	color: rgb(0, 0, 0);
-}
-
-
-.second{
-background-color: black;
-}  */
-
-
 .tax{
     margin-top: 10px;
    font-size: larger;
    margin-left: 50px;
-   
-   
-
 }
 
-
+/* adding style to the buttons */
 button {
    position: relative;
    display: inline-block;
@@ -414,7 +287,7 @@ button {
    color: #fff;
   }
 
-
+/* adding the height, width adn position for splash */
   .splash{
     cursor: pointer;
     position: fixed;
@@ -427,10 +300,12 @@ button {
     transition: all ease-in-out 600ms;
   }
 
+  /* adding the transition */
   .hidden{
     transition: 0.5s;
     display: none;
   }
+  /* adding the image and giving it size */
   .splash-img{
     display: flex;
     justify-content: center;

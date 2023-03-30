@@ -5,6 +5,7 @@
   box-sizing: border-box;
   /* font-family: 'Poppins',sans-serif; */
 }
+
 body{
   height: 110vh;
   display: flex;
@@ -14,8 +15,9 @@ body{
   /* background-color: #bcd2e8; */
   background: #ccdae6;
 }
+
+/* giving size for the form box */
 .container{
-  /* max-width: 500px; */
   width: 50%;
   height: 90vh;
   background-color: #ffffff;
@@ -27,15 +29,7 @@ body{
   font-weight: 500;
   position: relative;
 }
-/* .container .title::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 30px;
-  border-radius: 5px;
-} */
+
 .content form .user-details{
   display: flex;
   flex-wrap: wrap;
@@ -43,17 +37,21 @@ body{
   margin: 20px 0 12px 0;
 } 
 
+
  form .user-details .input-box{
   margin-bottom: 15px;
   /* width: 135vh;  */
     width: calc(100% / 2 - 20px);  
 } 
 
+/* style for the details to the input */
 form .input-box span.details{
   display: block;
   font-weight: 500;
   margin-bottom: 5px;
 }
+
+/* adding the style for the input to the user */
 .user-details .input-box input{
   height: 45px;
   width: 100%;
@@ -66,6 +64,7 @@ form .input-box span.details{
   /* transition: all 0.3s ease; */
 }
 
+/* button adjustment */
  form .button{
    height: 45px;
    margin: 35px 0;
@@ -80,7 +79,6 @@ form .input-box span.details{
    border-radius: 8px;
    border: none;
    font-size: 18px; 
-   /* transition: all 0.3s ease; */
    background-color: #7ca5c4; 
    /* background: linear-gradient(135deg, #446bb4, #d6cece );  */
  }

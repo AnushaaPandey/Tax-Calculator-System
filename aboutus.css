@@ -160,7 +160,7 @@ padding-left: 248px;
     align-items:left;  
     font-size: 18px; 
 }  
-
+/* adding style for the heading of rules and regulations */
 .rule{
     font-size: larger;
     /* background-color: rgb(194, 111, 111); */
@@ -168,7 +168,7 @@ padding-left: 248px;
    height: 8%;
     
 }
-
+/* giving style for the paragraph */
  p{ 
    margin-top: 65px;  
    margin-left: -400px;
@@ -177,9 +177,9 @@ padding-left: 248px;
    font-size: 20px;
    font: 1em sans-serif;
    /* background-color: #5b5fc7; */
-
  } 
 
+/* styling for the calculator button box */
 .ll{
     border-radius: 25px;
     width: 20%;
