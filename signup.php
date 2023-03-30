@@ -1,4 +1,5 @@
 <?php
+// (include 'database.php');
 $mysqli=new mysqli('localhost:3307','root',''); 
 
 if($mysqli->connect_error){
@@ -12,8 +13,8 @@ if(isset($_POST['submit'])){
   $lastname = $_POST['lname'];
   $username = $_POST['uname'];
   $email = $_POST['email'];
-  $password = $_POST['password'];
-  $cpassword = $_POST['cpassword'];
+  $password = md5($_POST['password']);
+  $cpassword = md5($_POST['cpassword']);
   $cname = $_POST['cname'];
   $tax_number = $_POST['tax_number'];
   $address = $_POST['address'];
@@ -55,11 +56,12 @@ if(isset($_POST['submit'])){
 
 ?>
 
+
 <!DOCTYPE html>
 <!-- Created By CodingLab - www.codinglabweb.com -->
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="CSS/signup.css">
+    <link rel="stylesheet" href="signup.css">
    </head>
 <body>
   <div class="container">
@@ -106,7 +108,7 @@ if(isset($_POST['submit'])){
           </div>
 		  <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="number" name="phone" placeholder="Enter your number" required>
+            <input type="text" name="phone" placeholder="Enter your number" required>
           </div>
         </div>
         

@@ -12,7 +12,7 @@ body{
   align-items: center;
   padding: 10px;
   /* background-color: #bcd2e8; */
-  background: linear-gradient(135deg, #657fb1, #f5f5f5 ); 
+  background: #ccdae6;
 }
 .container{
   /* max-width: 500px; */
@@ -81,7 +81,7 @@ form .input-box span.details{
    border: none;
    font-size: 18px; 
    /* transition: all 0.3s ease; */
-   background-color: #3fd49e;
+   background-color: #7ca5c4; 
    /* background: linear-gradient(135deg, #446bb4, #d6cece );  */
  }
  form .button input:hover{
