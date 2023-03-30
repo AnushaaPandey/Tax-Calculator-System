@@ -1,0 +1,2842 @@
+login
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Log in Page</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+	<body>
+	<div class="box">
+		
+			<div id="name">
+			  <h3> Tax Management System</h3>
+			</div>
+		
+     	<label>User Name</label>
+     	<input type="text" name="uname" placeholder="User Name"><br>
+
+     	<label>Password  </label>
+     	<input type="password" name="password" placeholder="Password"><br>
+     	<button type="submit">Login</button><br>
+
+		 <span class="signup">Not Registered? <a href="signup.html"> Sign Up </a></span>
+	</div>
+</body>
+</html>
+
+
+
+/* adding color to the background */
+body{
+  background: #ccdae6;
+}
+
+/* giving the box size, color and place */
+.box{
+    padding: 5em;
+    border-radius: 50px;
+    margin: 15em;
+    background-color: #ffffff;
+    width: 250px;
+    height:200px;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    transform: translate(-25%, -50%);
+}
+
+/* giving style to the heading tax management system */
+#name{
+    position: absolute;
+    left: 30%;
+    top: 17%;
+    transform: translate(-25%, -50%);
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin: 8px 0;
+  display: inline-block;
+  color: black;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #5b8bc9;
+  padding: 14px 15px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+span.signup {
+    float: left;
+    padding-top: 5px;
+    color: rgb(0, 0, 0); 
+  }
+
+ a{
+    float: right;
+    color: rgb(167, 27, 27);
+ }
+
+ a:hover {
+    opacity: 0.2;
+  }
+  
+  
+  
+
+
+signup
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="signup.css">
+   </head>
+<body>
+  <div class="container">
+
+    <div class="title"><b>Sign Up</b></div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" placeholder="Enter your first name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" placeholder="Enter your Last name" required>
+          </div>
+		  <div class="input-box">
+            <span class="details">Username </span>
+            <input type="text" placeholder="Enter your Username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Confirm your password" required>
+          </div>
+		  <div class="input-box">
+            <span class="details">Company Name</span>
+            <input type="text" placeholder="Enter your Company Name" required>
+          </div>
+		  <div class="input-box">
+            <span class="details">Tax Number</span>
+            <input type="text" placeholder="Enter your Tax  number" required>
+          </div>
+		  <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Enter your address" required>
+          </div>
+		  <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="Sign Up">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins',sans-serif; */
+}
+body{
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  /* background-color: #bcd2e8; */
+  background: #ccdae6;
+}
+.container{
+  /* max-width: 500px; */
+  width: 50%;
+  height: 90vh;
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+/* .container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+} */
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+} 
+
+ form .user-details .input-box{
+  margin-bottom: 15px;
+  /* width: 135vh;  */
+    width: calc(100% / 2 - 20px);  
+} 
+
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+   border: 1px solid #ccc; 
+  border-bottom-width: 2px;
+  /* transition: all 0.3s ease; */
+}
+
+ form .button{
+   height: 45px;
+   margin: 35px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ form .button input{
+   height: 100%;
+   width: 30%;
+   border-radius: 8px;
+   border: none;
+   font-size: 18px; 
+   /* transition: all 0.3s ease; */
+   background-color: #7ca5c4; 
+   /* background: linear-gradient(135deg, #446bb4, #d6cece );  */
+ }
+ form .button input:hover{
+  opacity: 0.8;
+  }
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
+
+
+
+
+home
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <title>Home </title>
+</head>
+<body>
+    <section class="nav">
+        <div class="logo">
+            <img src="splash1.png" alt="Splash Screen">
+        </div>
+
+        <!-- <div class="main">
+            <h3>Tax Management System</h3>
+        </div> -->
+
+        <div class="navbar">
+            <a class="active" href="#">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="help.html">Help</a>
+            <a href="setting.html">Settings</a>
+        </div>
+
+        <!-- <div class="search">
+            <input type="text" name="uname" placeholder="Search"><br>
+        </div> -->
+        <input class="input" name="text" placeholder="Search..." type="search">
+
+        <div class="user">
+            <img src="user.png" alt="User">
+        </div>
+
+    </section>
+
+    <section class="body">
+        
+          <div class="one">
+            <span class="welcome"><b>Welcome to Tax Management System</b></span>
+              <p> Our system allows for easy import of financial data from real-time
+                 tax calculation and hassle-free electronic. 
+               
+                We provide tax planning tools, audit support, and reporting
+                 to help you stay on track with your tax obligations and 
+                 minimize your tax liability. 
+                
+                Join our system today and experience the convenience and peace
+                 of mind that comes with efficiently and effectively managing 
+                 your taxes.Our team is here to provide support and assistance
+                every step of the way.
+
+                Our Tax Management System allows you to calculate the tax of income tax, custom tax and vat
+                In income tax, there is caterogories for the tax calculation of married and unmarried male and female for now.
+                However our system is still working for the calculation of Custom tax and vat which will be provided
+                in our website very soon.
+
+              </p>
+             
+           </div>
+            <!-- <div class="ll">
+            <ul class="u1">
+                <div class="b1"><button class="b"><a href="/">Income Tax </a></button> </div>
+			    <div class="b2"><button class="b"><a href="/">Custon Tax </a></button></div>
+			    <div class="b3"> <button class="b"><a href="/"> VAT</a> </button></div>
+              
+        
+            </ul>	
+            </div>  -->
+
+            <!-- <div class="ll">
+                <ul class="u1">
+                    <div class="b1"><a href="income.html" type: button>Income Tax </a></div>
+                    <div class="b2"><a href="/" type: button>Custom Tax </a></button></div>
+                    <div class="b3"><a href="/" type: button> VAT</a> </button></div>
+                  
+            
+                </ul>	
+                </div> -->
+                <div class="ll">
+                    <ul class="u1">
+                        <span class="tax"><b>Tax Calculations:</b></span>
+                        <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <a href="income.html"><span class="button-text">Income Tax</span></a>
+                          </button>
+                          <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <a href="#"><span class="button-text">Custom Tax</span></a>
+                          </button>
+                          <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <a href="#"><span class="button-text">Vat</span></a>
+                          </button>
+                    </ul>
+                </div>
+
+    </section>
+    <div class="splash">
+        <div class="splash-img">
+        <img src="splash1.png" alt="Splash Screen">
+        </div>
+    </div>
+    <script>
+        var splashScreen = document.querySelector('.splash');
+        splashScreen.addEventListener('click',()=>
+        {
+            splashScreen.style.opacity = 0 ;
+            setTimeout(()=>{
+                splashScreen.classList.add('hidden')
+            },610)
+        })
+    </script>
+</body>
+</html>
+      
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.nav
+{
+height: 75px;
+width: 100%;
+float: right;
+display: flex;
+align-content: space-around;
+justify-content: right;
+align-items: center;
+background-color: #183955;
+/* position: fixed; */
+}
+
+.logo
+{
+width: 35%;
+display: flex;
+justify-content: center;
+align-items:center ;
+float: left;
+height: 5px;
+/* margin: 28px; */
+margin-top: 2px;
+margin-left: -70px;
+padding: -5px;
+padding-right: 10px;
+}
+
+.logo img
+{
+width:60%;
+height:55px;
+
+}
+
+/* .main{
+    color: white;
+    width: 24%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    float: center;
+} */
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    float: right;
+    width: 450px;
+    margin: auto;
+    /* background-color: aqua; */
+  }
+
+
+
+  .input {
+    max-width: 190px;
+    background-color: #f5f5f5;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+  }
+  
+  input:focus {
+    border-bottom: 2px solid #5b5fc7;
+    border-radius: 4px 4px 2px 2px;
+  }
+  
+  input:hover {
+    outline: 1px solid lightgrey;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: center;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+
+  a:hover {
+    opacity: 0.6;
+  }
+
+
+.user{
+width: 10%;
+display: flex;
+justify-content: center;
+align-items:center ;
+float: right;
+height: 5px;
+/* margin: 28px; */
+margin-top: 3px;
+margin-left: 2px;
+padding: -5px;
+padding-right: 10px;
+}
+
+.user img
+{
+width:30%;
+height:30px;
+
+}
+
+
+
+.input {
+  max-width: 190px;
+  background-color: #f5f5f5;
+  color: #242424;
+  padding: .15rem .5rem;
+  min-height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  line-height: 1.15;
+  box-shadow: 0px 10px 20px -18px;
+}
+
+input:focus {
+  border-bottom: 2px solid #5b5fc7;
+  border-radius: 4px 4px 2px 2px;
+}
+
+input:hover {
+  outline: 1px solid lightgrey;
+}
+
+#search
+{
+
+width: 50%;
+padding:5px;
+font-size: 17px;
+border: 2px solid gray;
+border-radius: 9px;
+height: 60px;
+
+}
+.search
+{
+padding-left: 248px;
+}
+
+.body{
+    width: 100%;
+    height: 89vh;
+    /* background-color: #DAFFEF; */
+    display: flex;
+    flex-direction: row;
+   /* background: #acbfce;  */
+   background: #ccdae6;  
+}
+
+.one{
+  width: 55%;
+  height: 70vh;
+  margin-top: 60px; 
+  margin-left: 30px;
+  margin-right: 200px;
+   /* background-color: rgb(199, 38, 38);  */
+   display: inline-block;
+  text-align: center; 
+   display: flex; 
+  justify-content: center;
+  align-items: center;  
+  font-size: 18px; 
+}  
+
+.welcome{
+
+  font-size: larger;
+  margin-top: -350px;
+  margin-left: -10px;
+   /* background-color: rgb(194, 111, 111);  */
+  width: 50%;
+  height: 8%;
+  
+}
+
+p{ 
+ margin-top: 65px;  
+ margin-left: -400px;
+ width:90%;
+ height: 80%;
+ font-size: 25px;
+ font: 1.2em sans-serif;
+ word-spacing: 5px;
+ 
+ 
+ 
+ /* background-color: #5b5fc7; */
+
+} 
+
+
+.ll{
+    border-radius: 25px;
+    width: 20%;
+    height: 350px;
+    background-color: #889fb1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px; 
+    
+     /* transform: translate(55%, 10%);     */
+}
+ 
+/* 
+.b1
+{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fcfafa;
+	height: 50px;
+	width: 130%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 1.0); 
+	object-fit: fill;
+    margin: 10px 0;
+    
+    /* transform: translate(-25%, 0%);  */
+/* }
+.b1:hover
+{
+	opacity: 0.6;
+}
+.b1 a
+{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+
+
+.b2
+{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	height: 50px;
+	width: 130%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 1.0); 
+	object-fit: fill;
+    margin: 10px 0;
+    /* transform: translate(-25%, 0%);  */
+/* }
+.b2:hover
+{
+	opacity: 0.6;
+}
+.b2 a
+{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+.b3
+{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	height: 50px;
+	width: 130%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 1.0); 
+	object-fit: fill;
+    margin: 10px 0;
+
+}
+.b3:hover
+{
+	opacity: 0.6;
+}
+.b3 a
+{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+
+.second{
+background-color: black;
+}  */
+
+
+.tax{
+    margin-top: 10px;
+   font-size: larger;
+   margin-left: 50px;
+   
+   
+
+}
+
+
+button {
+   position: relative;
+   display: inline-block;
+   cursor: pointer;
+   outline: none;
+   border: 0;
+   vertical-align: middle;
+   text-decoration: none;
+   background: transparent;
+   padding: 0;
+   font-size: inherit;
+   font-family: inherit;
+   margin: 10px;
+  }
+  
+  button.learn-more {
+   width: 12rem;
+   height: auto;
+  }
+  
+  button.learn-more .circle {
+   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+   position: relative;
+   display: block;
+   margin: 0;
+   width: 2.55rem;
+   height: 2.55rem;
+   background: #282936;
+   border-radius: 1.625rem;
+  }
+  
+  button.learn-more .circle .icon {
+   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+   background: #fff;
+  }
+  
+  button.learn-more .circle .icon.arrow {
+   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+   left: 0.625rem;
+   width: 1.125rem;
+   height: 0.125rem;
+   background: none;
+  }
+  
+  button.learn-more .circle .icon.arrow::before {
+   position: absolute;
+   content: "";
+   top: -0.29rem;
+   right: 0.0625rem;
+   width: 0.625rem;
+   height: 0.625rem;
+   border-top: 0.125rem solid #fff;
+   border-right: 0.125rem solid #fff;
+   transform: rotate(45deg);
+  }
+  
+  button.learn-more .button-text {
+   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   padding: 0.75rem 0;
+   margin: 0 0 0 1.85rem;
+   color: #282936;
+   font-weight: 700;
+   line-height: 1.6;
+   text-align: center;
+   text-transform: uppercase;
+  }
+  
+  button:hover .circle {
+   width: 100%;
+  }
+  
+  button:hover .circle .icon.arrow {
+   background: #fff;
+   transform: translate(1rem, 0);
+  }
+  
+  button:hover .button-text {
+   color: #fff;
+  }
+
+
+  .splash{
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(10, 10, 10);
+    transition: all ease-in-out 600ms;
+  }
+
+  .hidden{
+    transition: 0.5s;
+    display: none;
+  }
+  .splash-img{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 25vh;
+    margin-top: 250px;
+    margin-left: 550px;
+  }
+
+
+
+
+
+
+about us
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="aboutus.css">
+    <title>About Us</title>
+</head>
+<body>
+    <section class="nav">
+        <div class="logo">
+            <img src="splash1.png" alt="Splash Screen">
+        </div>
+
+        <!-- <div class="main">
+            <h3>Tax Management System</h3>
+        </div> -->
+
+        <div class="navbar">
+            <a class="active" href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#contact">Help</a>
+            <a href="setting.html">Settings</a>
+        </div>
+        
+        <input class="input" name="text" placeholder="Search..." type="search">
+        <!-- <div class="search">
+            <input type="text" name="uname" placeholder="Search"><br>
+        </div> -->
+
+        <div class="user">
+            <img src="user.png" alt="User">
+        </div>
+
+    </section>
+
+    <section class="body">
+        
+          <div class="one">
+            <span class="rule"><b>Rules and Regulations:</b></span>
+              <p> As per the law bided in Nepal for the single people yearly: <br><br>
+                •	If your annual income is up-to 5,00,000 your income rate will be of 1%  <br><br>
+                •	Annually income is more than 5,00,001 – 7,00,000 your tax rate for the money in between that amount will be 10% which is if your annual income is 6,00,000 your tax rate for first 5,00,000 amount will be of 1% and for the rest 1,00,000 will be of 10%. <br><br>
+                •	Eventually if your annual income is between 7,00,001 – 10,00,000 your tax rate for 5,00,000 will be of 1% and for the money between 5,00,001 – 7,00,000 will be of 10% and for the money  between 7,00,001 – 10,00,000 the tax rate will be of 20%. <br><br>
+                •	Similarly, to the annual income for 10,00,001 – 20,00,000 the tax rate will be of 30%. <br> <br>
+                •	And for the annual income above 20,00,000 the tax rate will be of 36%. <br> <br>
+             
+           </div>
+            <!-- <div class="ll">
+            <ul class="u1">
+                <div class="b1"><button class="b"><a href="/">Income Tax </a></button> </div>
+			    <div class="b2"><button class="b"><a href="/">Custon Tax </a></button></div>
+			    <div class="b3"> <button class="b"><a href="/"> VAT</a> </button></div>
+              
+        
+            </ul>	
+            </div>  -->
+
+            <!-- <div class="ll">
+                <ul class="u1">
+                    <div class="b1"><a href="income.html" type: button>Income Tax </a></div>
+                    <div class="b2"><a href="/" type: button>Custom Tax </a></button></div>
+                    <div class="b3"><a href="/" type: button> VAT</a> </button></div>
+                  
+            
+                </ul>	
+                </div>  -->
+
+                <div class="ll">
+                    <ul class="u1">
+                        <span class="tax"><b>Tax Calculations:</b></span>
+                        <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <a href="income.html"><span class="button-text">Income Tax</span></a>
+                          </button>
+                          <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <a href="income.html"><span class="button-text">Custom Tax</span></a>
+                          </button>
+                          <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <a href="income.html"><span class="button-text">Vat</span></a>
+                          </button>
+                    </ul>
+                </div>
+
+    </section>
+</body>
+</html>
+
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.nav
+{
+height: 75px;
+width: 100%;
+float: right;
+display: flex;
+align-content: space-around;
+justify-content: right;
+align-items: center;
+background-color: #183955;
+/* position: fixed; */
+}
+
+.logo
+{
+width: 35%;
+display: flex;
+justify-content: center;
+align-items:center ;
+float: left;
+height: 5px;
+/* margin: 28px; */
+margin-top: 2px;
+margin-left: -70px;
+padding: -5px;
+padding-right: 10px;
+}
+
+.logo img
+{
+width:60%;
+height:55px;
+
+}
+
+/* .main{
+    color: white;
+    width: 24%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    float: center;
+} */
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    float: right;
+    width: 450px;
+    margin: auto;
+  }
+
+  .input {
+    max-width: 190px;
+    background-color: #f5f5f5;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+  }
+  
+  input:focus {
+    border-bottom: 2px solid #5b5fc7;
+    border-radius: 4px 4px 2px 2px;
+  }
+  
+  input:hover {
+    outline: 1px solid lightgrey;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: center;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+
+
+.user{
+width: 10%;
+display: flex;
+justify-content: center;
+align-items:center ;
+float: right;
+height: 5px;
+/* margin: 28px; */
+margin-top: 3px;
+margin-left: 2px;
+padding: -5px;
+padding-right: 10px;
+}
+
+.user img
+{
+width:30%;
+height:30px;
+
+}
+
+
+#search
+{
+
+width: 50%;
+padding:5px;
+font-size: 17px;
+border: 2px solid gray;
+border-radius: 9px;
+height: 60px;
+
+}
+.search
+{
+padding-left: 248px;
+}
+
+.body{
+    width: 100%;
+    height: 89vh;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    background: #ccdae6;  
+    
+   
+}
+
+
+ .one{
+    width: 55%;
+    height: 70vh;
+    margin-top: 60px; 
+    margin-left: 30px;
+    margin-right: 200px;
+    /* background-color: rgb(199, 38, 38);   */
+     display: inline-block;
+    text-align: left; 
+     display: flex; 
+    justify-content: left;
+    align-items:left;  
+    font-size: 18px; 
+}  
+
+.rule{
+    font-size: larger;
+    /* background-color: rgb(194, 111, 111); */
+   width: 60%;
+   height: 8%;
+    
+}
+
+ p{ 
+   margin-top: 65px;  
+   margin-left: -400px;
+   width:90%;
+   height: 80%;
+   font-size: 20px;
+   font: 1em sans-serif;
+   /* background-color: #5b5fc7; */
+
+ } 
+
+.ll{
+    border-radius: 25px;
+    width: 20%;
+    height: 350px;
+    background-color: #889fb1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px; 
+     /* transform: translate(55%, 10%);     */
+}
+ 
+/* 
+.b1
+{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	height: 50px;
+	width: 130%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 1.0); 
+	object-fit: fill;
+    margin: 10px 0;
+    
+    /* transform: translate(-25%, 0%);  */
+/* }
+.b1:hover
+{
+	opacity: 0.6;
+}
+.b1 a
+{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+
+
+.b2
+{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	height: 50px;
+	width: 130%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 1.0); 
+	object-fit: fill;
+    margin: 10px 0;
+    /* transform: translate(-25%, 0%);  */
+/* }
+.b2:hover
+{
+	opacity: 0.6;
+}
+.b2 a
+{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+.b3
+{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	height: 50px;
+	width: 130%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 1.0); 
+	object-fit: fill;
+    margin: 10px 0;
+    /* transform: translate(-25%, 0%);  */
+/* }
+.b3:hover
+{
+	opacity: 0.6;
+}
+.b3 a
+{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}   */
+
+.tax{
+     margin-top: 10px;
+    font-size: larger;
+    margin-left: 50px;
+    
+    
+
+}
+
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    margin: 10px;
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 2.55rem;
+    height: 2.55rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+
+
+
+
+contact us
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <section class="nav">
+        <div class="logo">
+            <img src="splash1.png" alt="Splash Screen">
+        </div>
+
+        <!-- <div class="main">
+            <h3>Tax Management System</h3>
+        </div> -->
+
+        <div class="navbar">
+            <a class="active" href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="help.html">Help</a>
+            <a href="setting.html">Settings</a>
+        </div>
+
+        <!-- <div class="search">
+            <input type="text" name="uname" placeholder="Search"><br>
+        </div> -->
+        <input class="input" name="text" placeholder="Search..." type="search">
+
+        
+        <div class="user">
+            <img src="user.png" alt="User">
+        </div>
+
+    </section>
+
+    <section class = "info">
+        <div class = "one">
+            <h2> Contact Us</h2>
+        </div>
+        <div class = "two">
+            <h1>Tax Management System</h1>
+        </div>
+        <div class="three">
+           <i> Ways to Contact Us: </i>
+        </div>
+        <div class="phone">
+            <img src="phone.png" alt="Call Us">
+        </div>
+        <div class = "four"> 
+           <b>+977 9861486762,  977 9172648956</b>
+        </div>
+        <div class="mail">
+            <img src="mail.png" alt="Call Us">
+        </div>
+        <div class="five">
+            <b><u> tax@gmail.com</u></b>
+        </div>
+        <div class="fb">
+                <img src="facebook.png" alt="taxmandu">
+        </div>
+        <div class="six">
+                <b><u> taxmandu</u></b>
+        </div>
+        <div class="insta">
+            <img src="instagram.png" alt="taxmandu">
+    </div>
+    <div class="seven">
+            <b><u> @taxmandu</u></b>
+    </div>
+    </section>
+</body>
+</html>
+
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.nav
+{
+height: 75px;
+width: 100%;
+float: right;
+display: flex;
+align-content: space-around;
+justify-content: right;
+align-items: center;
+background-color: #183955;
+/* position: fixed; */
+}
+
+.logo
+{
+width: 35%;
+display: flex;
+justify-content: center;
+align-items:center ;
+float: left;
+height: 5px;
+/* margin: 28px; */
+margin-top: 2px;
+margin-left: -70px;
+padding: -5px;
+padding-right: 10px;
+}
+
+.logo img
+{
+width:60%;
+height:55px;
+
+}
+
+/* .main{
+    color: white;
+    width: 24%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    float: center;
+} */
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    float: right;
+    width: 450px;
+    margin: auto;
+  }
+
+
+
+  
+  .input {
+    max-width: 190px;
+    background-color: #f5f5f5;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+  }
+  
+  input:focus {
+    border-bottom: 2px solid #5b5fc7;
+    border-radius: 4px 4px 2px 2px;
+  }
+  
+  input:hover {
+    outline: 1px solid lightgrey;
+  }
+  
+
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: center;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+
+
+.user{
+width: 10%;
+display: flex;
+justify-content: center;
+align-items:center ;
+float: right;
+height: 5px;
+/* margin: 28px; */
+margin-top: 3px;
+margin-left: 2px;
+padding: -5px;
+padding-right: 10px;
+}
+
+.user img
+{
+width:30%;
+height:30px;
+
+}
+
+
+#search
+{
+
+width: 50%;
+padding:5px;
+font-size: 17px;
+border: 2px solid gray;
+border-radius: 9px;
+height: 60px;
+
+}
+.search
+{
+padding-left: 248px;
+}
+
+.info{
+    background: #ccdae6; 
+    height: 100vh;
+    width: 100%;
+}
+
+
+.one{
+    /* background-color: bisque;  */
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 15%;
+    height: 20vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.two{
+   /* background-color: aqua; */
+   width: 40%;
+   height: 10 vh;
+   display: flex; 
+   justify-content: center;
+   align-items: center; 
+}
+
+.three{
+    /* background-color: blue; */
+    width: 30%;
+    height: 50px;
+    /* font-size: 10px; */
+    margin-top: 15px;
+   font-size: medium;
+   text-align: center;
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+}
+
+
+.phone
+{
+width: 5%;
+display: flex;
+justify-content: right;
+align-items:right ;
+/* float: right; */
+height: 8vh;
+/* margin: 28px; */
+margin-top: 15px;
+margin-left: 100px;
+/* background-color: blueviolet; */
+/* padding: -5px;
+ padding-right: 10px; 
+ background-color: rgb(196, 119, 18);  */
+}
+
+.phone img
+{
+margin-left: 20px;
+
+} 
+
+/* .four{
+    margin-top: 5px;
+    margin-right: 30px;
+   height: 10vh;
+   width: 20%;
+   background-color: rgb(184, 56, 56);
+} */
+
+.four{
+    width: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     float: center; 
+    height: 8vh;
+     /* margin: 28px;  */
+     margin-top: -50px;
+    margin-left: 170px; 
+    font-size: 22px;
+    /* background-color: rgb(43, 226, 113); */
+}
+
+.mail
+{
+width: 5%;
+display: flex;
+justify-content: right;
+align-items:right ;
+/* float: right; */
+height: 8vh;
+/* margin: 28px; */
+margin-top: 40px;
+margin-left: 100px;
+ /* background-color: blueviolet;  */
+/* padding: -5px;
+ padding-right: 10px; 
+ background-color: rgb(196, 119, 18);  */
+}
+
+.mail img
+{
+margin-left: 20px;
+
+}
+
+.five{
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     float: center; 
+    height: 8vh;
+     /* margin: 28px;  */
+     margin-top: -50px;
+    margin-left: 170px; 
+    font-size: 22px;
+    /* background-color: rgb(43, 226, 113);  */
+}
+
+
+.fb
+{
+width: 5%;
+display: flex;
+justify-content: right;
+align-items:right ;
+/* float: right; */
+height: 8vh;
+/* margin: 28px; */
+margin-top: 25px;
+margin-left: 100px;
+ /* background-color: blueviolet;  */
+/* padding: -5px;
+ padding-right: 10px; 
+ background-color: rgb(196, 119, 18);  */
+}
+
+.fb img
+{
+margin-left: 20px;
+
+}
+
+.six{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     float: center; 
+    height: 6vh;
+     /* margin: 28px;  */
+     margin-top: -45px;
+    margin-left: 190px; 
+    font-size: 22px;
+    /* background-color: rgb(43, 226, 113);   */
+}
+
+
+
+.insta
+{
+width: 5%;
+display: flex;
+justify-content: right;
+align-items:right ;
+/* float: right; */
+height: 8vh;
+/* margin: 28px; */
+margin-top: 40px;
+margin-left: 100px;
+ /* background-color: blueviolet;  */
+/* padding: -5px;
+ padding-right: 10px; 
+ background-color: rgb(196, 119, 18);  */
+}
+
+.insta img
+{
+margin-left: 20px;
+
+}
+
+.seven{
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     float: center; 
+    height: 8vh;
+     /* margin: 28px;  */
+     margin-top: -58px;
+    margin-left: 150px; 
+    font-size: 22px;
+    /* background-color: rgb(43, 226, 113);  */
+}
+
+
+
+
+help
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="help.css">
+    <title>Home </title>
+</head>
+<body>
+    <section class="nav">
+        <div class="logo">
+            <img src="splash1.png" alt="Splash Screen">
+        </div>
+
+        <!-- <div class="main">
+            <h3>Tax Management System</h3>
+        </div> -->
+
+        <div class="navbar">
+            <a class="active" href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#help">Help</a>
+            <a href="setting.html">Settings</a>
+        </div>
+
+        <!-- <div class="search">
+            <input type="text" name="uname" placeholder="Search"><br>
+        </div> -->
+        <input class="input" name="text" placeholder="Search..." type="search">
+
+        <div class="user">
+            <img src="user.png" alt="User">
+        </div>
+    </section>
+      <section class = "hh">
+            <div class = "tex">
+                <h1> Help </h1><br>
+            </div>
+            <div class="how">
+                <b>How can we Help?</b>
+            </div>
+            <div class="question">
+                <input type="search" name="uname" placeholder="Ask us Questions"><br>
+            </div>
+            <div class="fa">
+                <b>FAQ</b>
+            </div>
+            <div class="one">
+                How does system work?<br>
+               <p> -A tax management system works by collecting and organizing tax-related information, such as income, expenses, deductions, and <br>
+                credits, from various sources and using it to prepare and file tax returns. Some systems also provide tax planning and forecasting features.</p>
+            </div>
+            <div class="two">
+                What services does system provide? <br>
+                <p>-System provides services such as tax preparation, tax planning, tax compliance, financial reporting, audit support, data import/export<br>
+                     and customization to help individuals and organizations manage their tax-related information, filings, and compliance requirements.</p>
+            </div>
+            <div class="three">
+                What are the benefits of using a tax management system? <br>
+               <p>-Some of the benefits of using a tax management system include accurate and timely filing of tax returns, better visibility <br>
+               into tax liabilities and payments, reduced risk of penalties and fines, and improved compliance with tax laws and regulations</p>
+            </div>
+            <div class="four">
+               How does a tax management system calculate my taxes?<br>
+             <p>- A tax management system uses the financial data you provide to calculate your taxes based on <br>
+                the applicable tax laws and regulations. It may also consider any deductions or credits you are eligible for. </p>
+            </div>
+    </section> 
+</body>
+</html>
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.nav
+{
+height: 75px;
+width: 100%;
+float: right;
+display: flex;
+align-content: space-around;
+justify-content: right;
+align-items: center;
+background-color: #183955;
+/* position: fixed;  */
+}
+
+.logo
+{
+width: 35%;
+display: flex;
+justify-content: center;
+align-items:center ;
+float: left;
+height: 5px;
+/* margin: 28px; */
+margin-top: 2px;
+margin-left: -70px;
+padding: -5px;
+padding-right: 10px;
+}
+
+.logo img
+{
+width:60%;
+height:55px;
+
+}
+
+/* .main{
+    color: white;
+    width: 24%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    float: center;
+} */
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    float: right;
+    width: 450px;
+    margin: auto;
+  }
+
+   
+  .input {
+    max-width: 190px;
+    background-color: #f5f5f5;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+  }
+  
+  input:focus {
+    border-bottom: 2px solid #5b5fc7;
+    border-radius: 4px 4px 2px 2px;
+  }
+  
+  input:hover {
+    outline: 1px solid lightgrey;
+  }
+
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: center;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+
+
+.user{
+width: 10%;
+display: flex;
+justify-content: center;
+align-items:center ;
+float: right;
+height: 5px;
+/* margin: 28px; */
+margin-top: 3px;
+margin-left: 2px;
+padding: -5px;
+padding-right: 10px;
+}
+
+.user img
+{
+width:30%;
+height:30px;
+
+}
+
+
+#search
+{
+
+width: 50%;
+padding:5px;
+font-size: 17px;
+border: 2px solid gray;
+border-radius: 9px;
+height: 60px;
+
+}
+.search
+{
+padding-left: 248px;
+}
+
+.hh{
+  background: #ccdae6; 
+    height: 100vh;
+    width: 100%;
+}
+
+.tex{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 10%;
+    height: 13vh;
+    display: flex; 
+    justify-content: center;
+    align-items:end; 
+     /* background-color: aqua;  */
+}
+
+.how{
+   /* background-color: rgb(253, 144, 248);  */
+    width: 13%;
+    height: 23 vh;
+    margin-left: 80px;
+    font-size: 18px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px;
+ }
+
+ .question
+{
+padding-left: 90px;
+margin-top: 25px;
+width: 50%;
+
+}
+
+input[type=search]{
+  width: 40%;
+  height: 7vh;
+}
+
+.fa{
+    /* background-color: rgb(253, 144, 248);  */
+     width: 13%;
+     height: 23 vh;
+     margin-left: 25px;
+     font-size: 18px;
+     display: flex; 
+     justify-content: center;
+     align-items: center; 
+     margin-top: 20px;
+  }
+
+  .one{
+    height: 10vh;
+    width: 70%;
+    /* background-color: antiquewhite; */
+    margin-top: 13px;
+    margin-left: 85px;
+    font:  sans-serif;
+  }
+   
+  .two{
+    height: 10vh;
+    width: 70%;
+    /* background-color: rgb(212, 125, 11); */
+    margin-top: 13px;
+    margin-left: 85px;
+    font: sans-serif;
+  }
+
+  .three{
+    height: 10vh;
+    width: 70%;
+    /* background-color: rgb(212, 125, 11); */
+    margin-top: 13px;
+    margin-left: 85px;
+    font: sans-serif;
+  }
+
+  .four{
+    height: 10vh;
+    width: 70%;
+    /* background-color: rgb(212, 125, 11); */
+    margin-top: 13px;
+    margin-left: 85px;
+    font:  sans-serif;
+  }
+
+
+
+
+settings
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="setting.css">
+    <title>Home </title>
+</head>
+<body>
+    <section class="nav">
+        <div class="logo">
+            <img src="splash1.png" alt="Splash Screen">
+        </div>
+
+        <!-- <div class="main">
+            <h3>Tax Management System</h3>
+        </div> -->
+
+        <div class="navbar">
+            <a class="active" href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="help.html">Help</a>
+            <a href="setting.html">Settings</a>
+        </div>
+
+        <!-- <div class="search">
+            <input type="text" name="uname" placeholder="Search"><br>
+        </div> -->
+
+        <input class="input" name="text" placeholder="Search..." type="search">
+
+        <div class="user">
+            <img src="user.png" alt="User">
+        </div>
+
+    </section>
+    <section class = "type">
+        <div class = "first">
+            <h1> Settings</h1>
+        </div>
+        <div class="ll">
+            <ul class="u1">
+                <div class="b1"><a href="/" type: button>Account Information</a></div>
+                <div class="b2"><a href="/" type: button> Tax History </a></button></div>
+                <div class="b3"><a href="/" type: button> Tax Report</a> </button></div>
+                <div class="b4"><a href="/" type: button> Log Out</a> </button></div>
+        
+            </ul>	
+            </div>
+    </section>
+</body>
+</html>
+
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.nav
+{
+height: 75px;
+width: 100%;
+float: right;
+display: flex;
+align-content: space-around;
+justify-content: right;
+align-items: center;
+background-color: #183955;
+/* position: fixed;  */
+}
+
+.logo
+{
+width: 35%;
+display: flex;
+justify-content: center;
+align-items:center ;
+float: left;
+height: 5px;
+/* margin: 28px; */
+margin-top: 2px;
+margin-left: -70px;
+padding: -5px;
+padding-right: 10px;
+}
+
+.logo img
+{
+width:60%;
+height:55px;
+
+}
+
+.main{
+    color: white;
+    width: 24%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    float: center;
+}
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    float: right;
+    width: 450px;
+    margin: auto;
+  }
+
+
+  
+  .input {
+    max-width: 190px;
+    background-color: #f5f5f5;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+  }
+  
+  input:focus {
+    border-bottom: 2px solid #5b5fc7;
+    border-radius: 4px 4px 2px 2px;
+  }
+  
+  input:hover {
+    outline: 1px solid lightgrey;
+  }
+  
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: center;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+
+
+.user{
+width: 10%;
+display: flex;
+justify-content: center;
+align-items:center ;
+float: right;
+height: 5px;
+/* margin: 28px; */
+margin-top: 3px;
+margin-left: 2px;
+padding: -5px;
+padding-right: 10px;
+}
+
+.user img
+{
+width:30%;
+height:30px;
+
+}
+
+
+#search
+{
+
+width: 50%;
+padding:5px;
+font-size: 17px;
+border: 2px solid gray;
+border-radius: 9px;
+height: 60px;
+
+}
+.search
+{
+padding-left: 248px;
+}
+
+.type{
+    background: #ccdae6; 
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+
+.first{
+     /* background-color: bisque;    */
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 15%;
+    height: 20vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.ll{
+    
+    width: 20%;
+    height: 350px;
+     /* background-color: rgb(71, 68, 68);    */
+    /* flex-direction: column; */
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: 0px; 
+    margin-left: 85px;
+     /* transform: translate(55%, 10%);     */
+}
+ 
+
+.b1
+{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    /* margin-left: 10px; */
+	 background-color: #fcfafa; 
+	height: 50px;
+	width: 150%;
+	/* background-size: 100%; */
+	/* background-repeat: no-repeat; */
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 1.0); 
+	/* object-fit: fill; */
+    margin: 10px 0; 
+    
+    /* transform: translate(-25%, 0%);  */
+}
+.b1:hover
+{
+	opacity: 0.6;
+}
+.b1 a
+{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+
+.b2
+{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	height: 50px;
+	width: 150%;
+	/* background-size: 100%;
+	background-repeat: no-repeat; */
+	border-radius: 6px;
+	/* box-shadow: rgba(0, 0, 0, 1.0); 
+	object-fit: fill; */
+    margin: 10px 0;
+    /* transform: translate(-25%, 0%);  */
+}
+.b2:hover
+{
+	opacity: 0.6;
+}
+.b2 a
+{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+.b3
+{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	height: 50px;
+	width: 150%;
+	/* background-size: 100%;
+	background-repeat: no-repeat; */
+	border-radius: 6px;
+	/* box-shadow: rgba(0, 0, 0, 1.0); 
+	object-fit: fill; */
+    margin: 10px 0;
+    /* transform: translate(-25%, 0%);  */
+}
+.b3:hover
+{
+	opacity: 0.6;
+}
+.b3 a
+{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+
+.b4
+{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	height: 50px;
+	width: 150%;
+	/* background-size: 100%;
+	background-repeat: no-repeat; */
+	border-radius: 6px;
+	/* box-shadow: rgba(0, 0, 0, 1.0); 
+	object-fit: fill; */
+    margin: 10px 0;
+    /* transform: translate(-25%, 0%);  */
+}
+
+
+.b4:hover
+{
+	opacity: 0.6;
+}
+.b4 a
+{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+
+income
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="income.css">
+    <title>Home </title>
+</head>
+<body>
+    <section class="nav">
+        <div class="logo">
+            <img src="splash1.png" alt="Splash Screen">
+        </div>
+
+        <!-- <div class="main">
+            <h3>Tax Management System</h3>
+        </div> -->
+
+        <div class="navbar">
+            <a class="active" href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="help.html">Help</a>
+            <a href="setting.html">Settings</a>
+        </div>
+
+        <!-- <div class="search">
+            <input type="search" name="uname" placeholder="Search"><br>
+        </div> -->
+
+        <input class="input" name="text" placeholder="Search..." type="search">
+        
+
+        <div class="user">
+            <img src="user.png" alt="User">
+        </div>
+    </section>
+
+    <section class="form">
+        <div class= "first">
+            <label for="yearhead">Assessment Info</label>
+            <select id="year">
+                <option value="date">F.Y. 2079-8</option>
+                <option value="date">F.Y. 2076-2</option>
+                <option value="date">F.Y. 2077-1</option>
+                <option value="date">F.Y. 2078-7</option>
+              </select>  
+              <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+              <select id="status">
+                <option value="married">Married</option>
+                <option value="unmarried">UnMarried</option>
+              </select>
+        </div>
+    </section>
+    <section class="mainform">
+        <div class="second">
+            <div class="inputbox">
+                <span class="details">Monthly Salary: </span>
+                <input type="text" placeholder="enter monthly salary" required>
+            </div>
+            <div class="inputbox">
+                <span class="details">Annual Gross Salary: </span>
+                <input type="text" placeholder="enter gross salary" required>
+            </div>
+            <!-- <div class="clear">
+                <input type= "button"  value= "Clear form">
+            </div> -->
+            <button>Clear All</button>
+            
+        </div>
+   
+    <div class="third">
+        <div class="one">
+            <b><label>Deduction</label></b>
+        </div>
+
+        <div class="inputbox">
+            <span class="details">Life Insurance Premium: </span>
+            <input type="text" placeholder="life insurance" required>  
+        </div>
+        <div class="inputbox">
+            <span class="details">Health Insurance Premium: </span>
+            <input type="text" placeholder="health insurance" required>  
+        </div>
+        <div class="inputbox">
+            <span class="details">House Insurance Premium: </span>
+            <input type="text" placeholder="house insurance" required>  
+        </div>
+        <div class="inputbox">
+            <span class="details">Medical Expenses:</span>
+            <input type="text" placeholder="Other" required>  
+        </div>
+        <!-- <div class="inputbox">
+            <span class="details">Insurance</span>
+            <input type="text" placeholder="insurance" required>  
+        </div> -->
+        <!-- <div class="tax">
+            <button type="submit">Calculate Tax</button>
+        </div> -->
+        <button>Calculate Tax</button>
+    </div>
+    </section>
+        
+</body>
+</html>
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.nav
+{
+height: 75px;
+width: 100%;
+float: right;
+display: flex;
+align-content: space-around;
+justify-content: right;
+align-items: center;
+background-color: #183955;
+/* position: fixed; */
+}
+
+.logo
+{
+width: 35%;
+display: flex;
+justify-content: center;
+align-items:center ;
+float: left;
+height: 5px;
+/* margin: 28px; */
+margin-top: 2px;
+margin-left: -70px;
+padding: -5px;
+padding-right: 10px;
+}
+
+.logo img
+{
+width:60%;
+height:55px;
+
+}
+
+/* .main{
+    color: white;
+    width: 24%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    float: center;
+} */
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    float: right;
+    width: 450px;
+    margin: auto;
+  }
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: center;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+
+
+.user{
+width: 10%;
+display: flex;
+justify-content: center;
+align-items:center ;
+float: right;
+height: 5px;
+/* margin: 28px; */
+margin-top: 3px;
+margin-left: 2px;
+padding: -5px;
+padding-right: 10px;
+}
+
+.user img
+{
+width:30%;
+height:30px;
+
+}
+
+/* 
+#search
+{
+
+width: 50%;
+padding:5px;
+font-size: 17px;
+border: 2px solid gray;
+border-radius: 9px;
+height: 60px;
+
+}
+.search
+{
+padding-left: 248px;
+} */
+
+
+
+.input {
+  max-width: 190px;
+  background-color: #f5f5f5;
+  color: #242424;
+  padding: .15rem .5rem;
+  min-height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  line-height: 1.15;
+  box-shadow: 0px 10px 20px -18px;
+}
+
+input:focus {
+  border-bottom: 2px solid #5b5fc7;
+  border-radius: 4px 4px 2px 2px;
+}
+
+input:hover {
+  outline: 1px solid lightgrey;
+}
+
+
+body{
+  background: linear-gradient(135deg, #657fb1, #f5f5f5 );  
+}
+
+.form{
+  width: 100%;
+  height: 9vh;
+  display: flex;
+  flex-direction: row;
+  background: #ccdae6; 
+}
+
+.first{
+ 
+  width: 50%;
+  height: 5vh;
+  /* background-color: aqua; */
+  margin-left: 30px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+   
+}
+
+#option{
+  height: 5vh
+}
+
+.mainform{
+  width: 100%;
+  height: 89vh;
+  
+  display: flex;
+  flex-direction: row;
+  
+}
+ 
+.second{
+  margin-top: 20px;
+  margin-right: 90px;
+  margin-left: 20px; 
+  background: #ccdae6;  
+  width: 40%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}  
+
+input[type=text]{
+  height: 5vh;
+  width: 200px;
+  margin-left: 35px ;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding-left: 15px; 
+  padding: 4px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+span {
+  display: inline-block;
+  width: 180px;
+  color: #131212;
+} 
+
+  .clear{
+    width: 20%;
+    height: 5vh;
+    /* background-color: rgb(197, 134, 189);  */
+      flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 220px;   
+}    
+
+button {
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 3.75em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+ }
+ 
+ button:disabled {
+  pointer-events: none;
+ }
+ 
+ button:hover {
+  color: #fff;
+  background-color: #5099da; 
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+ }
+ 
+ button:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
+
+
+
+
+.third{
+    
+  width: 45%;
+  height: 70vh;
+  background: #ccdae6;  
+  flex-direction: column;
+  margin-top: 30px; 
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  
+   /* transform: translate(55%, 10%);     */
+}
+
+.one{
+  font-size: 23px;
+}
+
+.tax{
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  
+}
+
+button {
+  background-color: #fcfcfc;
+  
+  /* color: rgb(99, 95, 95); */
+  padding: 14px 15px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  margin-left: 15px;
+  margin-top: 40px;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
