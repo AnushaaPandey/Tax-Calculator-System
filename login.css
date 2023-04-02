@@ -1,6 +1,7 @@
 
 body{
-  background: linear-gradient(135deg, #657fb1, #f5f5f5 ); 
+  /* background: linear-gradient(135deg, #657fb1, #f5f5f5 );  */
+  background: #ccdae6;
 }
 
 .box{
@@ -38,7 +39,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #3fd49e;
+  background-color: #5b8bc9;
   
   /* color: rgb(99, 95, 95); */
   padding: 14px 15px;
