@@ -1,0 +1,341 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    
+    font-family:Gill Sans, sans-serif;
+}
+/* nav bar sizing */
+.nav
+{
+height: 75px;
+width: 100%;
+float: right;
+display: flex;
+align-content: space-around;
+justify-content: right;
+align-items: center;
+background-color: #183955;
+/* position: fixed; */
+}
+ 
+/* style of the logo */
+.logo
+{
+width: 35%;
+display: flex;
+justify-content: center;
+align-items:center ;
+float: left;
+height: 5px;
+/* margin: 28px; */
+margin-top: 2px;
+margin-left: -70px;
+padding: -5px;
+padding-right: 10px;
+}
+
+.logo img
+{
+width:60%;
+height:55px;
+}
+
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    float: left;
+    width: 370px;
+    margin: auto;
+    margin-right: 100px;
+     /* background-color: aqua;  */
+  }
+
+ .search {
+   background-color: #242424;
+   display: flex;
+   justify-items: left;
+   align-items: left;
+    float: left;
+    margin-right: 20px;
+  } 
+  .input {
+    max-width: 160px;
+    background-color: #f5f5f5;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+    /* margin-left: 250px; */
+    align-items: left;
+  }
+  
+ 
+
+
+  input:focus {
+    border-bottom: 2px solid #5b5fc7;
+    border-radius: 4px 4px 2px 2px;
+  }
+  
+  input:hover {
+    outline: 1px solid lightgrey;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: center;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+
+  a:hover {
+    opacity: 0.6;
+  }
+
+
+
+
+
+  .dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-right: 60px;
+   
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #1b4969;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 130px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   
+  }
+  
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+
+
+
+
+.info{
+    background: #ccdae6; 
+    height: 100vh;
+    width: 100%;
+}
+
+
+.one{
+    /* background-color: bisque;  */
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 15%;
+    height: 20vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.two{
+   /* background-color: aqua; */
+   width: 40%;
+   height: 10 vh;
+   display: flex; 
+   justify-content: center;
+   align-items: center; 
+}
+
+.three{
+    /* background-color: blue; */
+    width: 30%;
+    height: 50px;
+    margin-top: 15px;
+   font-size: medium;
+   text-align: center;
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+}
+/* adding style to the phone icon */
+.phone
+{
+width: 5%;
+display: flex;
+justify-content: right;
+align-items:right ;
+/* float: right; */
+height: 8vh;
+/* margin: 28px; */
+margin-top: 15px;
+margin-left: 100px;
+
+}
+/* giving height and width to phone img */
+.phone img
+{
+margin-left: 20px;
+
+} 
+/* adding style to the number */
+.four{
+    width: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     float: center; 
+    height: 8vh;
+     /* margin: 28px;  */
+     margin-top: -50px;
+    margin-left: 200px; 
+    font-size: 22px;
+    /* background-color: rgb(43, 226, 113); */
+}
+
+.mail
+{
+width: 5%;
+display: flex;
+justify-content: right;
+align-items:right ;
+/* float: right; */
+height: 8vh;
+/* margin: 28px; */
+margin-top: 40px;
+margin-left: 100px;
+}
+
+.mail img
+{
+margin-left: 20px;
+
+}
+
+.five{
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     float: center; 
+    height: 8vh;
+     /* margin: 28px;  */
+     margin-top: -50px;
+    margin-left: 170px; 
+    font-size: 22px;
+    /* background-color: rgb(43, 226, 113);  */
+}
+
+
+.fb
+{
+width: 5%;
+display: flex;
+justify-content: right;
+align-items:right ;
+/* float: right; */
+height: 8vh;
+/* margin: 28px; */
+margin-top: 25px;
+margin-left: 100px;
+ /* background-color: blueviolet;  */
+ /* padding: -5px;
+ padding-right: 10px;  */
+}
+
+.fb img
+{
+margin-left: 20px;
+
+}
+
+.six{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     float: center; 
+    height: 6vh;
+     /* margin: 28px;  */
+     margin-top: -45px;
+    margin-left: 190px; 
+    font-size: 22px;
+    /* background-color: rgb(43, 226, 113);   */
+}
+
+
+
+.insta
+{
+width: 5%;
+display: flex;
+justify-content: right;
+align-items:right ;
+/* float: right; */
+height: 8vh;
+/* margin: 28px; */
+margin-top: 40px;
+margin-left: 100px;
+ /* background-color: blueviolet;  */
+/* padding: -5px;
+ padding-right: 10px; 
+ background-color: rgb(196, 119, 18);  */
+}
+
+.insta img
+{
+margin-left: 20px;
+
+}
+
+.seven{
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     float: center; 
+    height: 8vh;
+     /* margin: 28px;  */
+     margin-top: -58px;
+    margin-left: 150px; 
+    font-size: 22px;
+    /* background-color: rgb(43, 226, 113);  */
+}
+
+
+
