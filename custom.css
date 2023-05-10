@@ -1,0 +1,260 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.nav
+{
+height: 75px;
+width: 100%;
+float: right;
+display: flex;
+align-content: space-around;
+justify-content: right;
+align-items: center;
+background-color: #183955;
+/* position: fixed; */
+}
+
+.logo
+{
+width: 35%;
+display: flex;
+justify-content: center;
+align-items:center ;
+float: left;
+height: 5px;
+/* margin: 28px; */
+margin-top: 2px;
+margin-left: -70px;
+padding: -5px;
+padding-right: 10px;
+}
+
+.logo img
+{
+width:60%;
+height:55px;
+
+}
+
+/* .main{
+    color: white;
+    width: 24%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    float: center;
+} */
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    float: right;
+    width: 450px;
+    margin: auto;
+  }
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: center;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+
+
+.user{
+width: 10%;
+display: flex;
+justify-content: center;
+align-items:center ;
+float: right;
+height: 5px;
+/* margin: 28px; */
+margin-top: 3px;
+margin-left: 2px;
+padding: -5px;
+padding-right: 10px;
+}
+
+.user img
+{
+width:30%;
+height:30px;
+
+}
+
+
+.input {
+    max-width: 190px;
+    background-color: #f5f5f5;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+  }
+  
+  input:focus {
+    border-bottom: 2px solid #5b5fc7;
+    border-radius: 4px 4px 2px 2px;
+  }
+  
+  input:hover {
+    outline: 1px solid lightgrey;
+  }
+  
+  /* giving color to the body */
+  body{
+    background: linear-gradient(135deg, #657fb1, #f5f5f5 );  
+  }
+  
+  /* giving height for the option */
+  #option{
+    height: 5vh
+  }
+  
+  /* giving style for the form */
+  .mainform{
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    flex-direction: row;
+    
+  }
+   
+  .second{
+    margin-top: 20px;
+    margin-right: 90px;
+    margin-left: 20px; 
+    background: #ccdae6;  
+    width: 40%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }  
+  
+  input[type=text]{
+    height: 5vh;
+    width: 200px;
+    margin-left: 35px ;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-left: 15px; 
+    padding: 4px;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  span {
+    display: inline-block;
+    width: 180px;
+    color: #131212;
+  } 
+  
+    .clear{
+      width: 20%;
+      height: 5vh;
+      /* background-color: rgb(197, 134, 189);  */
+        flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 220px;   
+  }    
+  
+  button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+   }
+   
+   button:disabled {
+    pointer-events: none;
+   }
+   
+   button:hover {
+    color: #fff;
+    background-color: #5099da; 
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+   
+   button:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+  
+  
+  
+  /* styling the final form */
+  .third{ 
+    width: 45%;
+    height: 70vh;
+    background: #ccdae6;  
+    flex-direction: column;
+    margin-top: 30px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+   /* adding style for the form heading */
+  .one{
+    font-size: 23px;
+  }
+  
+  /* styling the button */
+  button {
+    background-color: #fcfcfc;
+    padding: 14px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    margin-left: 15px;
+    margin-top: 40px;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }

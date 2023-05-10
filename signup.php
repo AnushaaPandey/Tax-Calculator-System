@@ -44,7 +44,22 @@ if(isset($_POST['submit'])){
       )";
 
       $mysqli->query($insert);
-      header('location:login.php');
+      echo '<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>';
+      echo '<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>';
+      echo '<script>';
+      echo '$(document).ready(function() {';
+      echo 'Swal.fire({';
+      echo 'icon: "success",';
+      echo 'title: "Signup Successful!",';
+      echo 'text: "You have now signed up.",';
+      echo 'confirmButtonText: "OK",';
+      echo '}).then((result) => {';
+      echo 'if (result.isConfirmed) {';
+      echo 'window.location.href = "login.php";';
+      echo '}';
+      echo '});';
+      echo '});';
+      echo '</script>';
 
     }
 

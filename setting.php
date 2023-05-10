@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" type="text/css" href="setting.css">
     <title>Home </title>
 </head>
+
 <body>
     <section class="nav">
         <div class="logo">
@@ -37,19 +39,22 @@
         </div>
 
     </section>
-    <section class = "type">
-        <div class = "first">
+    <section class="type">
+        <div class="first">
             <h1> Settings</h1>
         </div>
-        <div class="ll">
-            <ul class="u1">
-                <div class="b1"><a href="/" type: button>Account Information</a></div>
-                <div class="b2"><a href="/" type: button> Tax History </a></button></div>
-                <div class="b3"><a href="/" type: button> Tax Report</a> </button></div>
-                <div class="b4"><a href="/" type: button> Log Out</a> </button></div>
-        
-            </ul>	
+        <form action="" method="post">
+            <div class="ll">
+                <ul class="u1">
+                    <div class="b1"><a href="/" type: button>Account Information</a></div>
+                    <div class="b2"><a href="/" type: button> Tax History </a></button></div>
+                    <div class="b3"><a href="/" type: button> Tax Report</a> </button></div>
+                    <div class="b4"><a href="home.php" type: button> Log Out</a> </button></div>
+
+                </ul>
             </div>
+        </form>
     </section>
 </body>
+
 </html>
