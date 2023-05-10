@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sign Up Page</title>
+	<link rel="stylesheet" type="text/css" href="landing.css">
+</head>
+
+<body>
+    <div class="loader"></div>
+
+
+</body>
+<script>
+
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+  
+    loader.classList.add("loader--hidden");
+  
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+    });
+  });
+  
+</script>
+</html>
+  

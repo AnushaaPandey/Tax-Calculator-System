@@ -1,0 +1,447 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family:Gill Sans, sans-serif;
+}
+/* nav bar sizing */
+.nav
+{
+height: 75px;
+width: 100%;
+float: right;
+display: flex;
+align-content: space-around;
+justify-content: right;
+align-items: center;
+background-color: #183955;
+/* position: fixed; */
+}
+ 
+/* style of the logo */
+.logo
+{
+width: 35%;
+display: flex;
+justify-content: center;
+align-items:center ;
+float: left;
+height: 5px;
+/* margin: 28px; */
+margin-top: 2px;
+margin-left: -70px;
+padding: -5px;
+padding-right: 10px;
+}
+
+.logo img
+{
+width:60%;
+height:55px;
+}
+
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    float: left;
+    width: 370px;
+    margin: auto;
+    margin-right: 100px;
+     /* background-color: aqua;  */
+  }
+
+ .search {
+   background-color: #242424;
+   display: flex;
+   justify-items: left;
+   align-items: left;
+    float: left;
+    margin-right: 40px;
+    margin-top: 5px;
+  } 
+  .input {
+    max-width: 160px;
+    background-color: #f5f5f5;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+    /* margin-left: 250px; */
+    align-items: left;
+  }
+  
+ 
+
+
+  input:focus {
+    border-bottom: 2px solid #5b5fc7;
+    border-radius: 4px 4px 2px 2px;
+  }
+  
+  input:hover {
+    outline: 1px solid lightgrey;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: center;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+
+  a:hover {
+    opacity: 0.6;
+  }
+
+
+
+
+
+  .dropbtn {
+     background-color: #183955; 
+   
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-right: 80px;
+ 
+   
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #1b4969;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 130px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   
+  }
+  
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+
+
+
+  .mainform{
+    width: 100%;
+    height: 100vh;
+    
+    
+  }
+  
+  /* giving color to the body */
+  /* body{
+    /* background: linear-gradient(135deg, #657fb1, #f5f5f5 );   */
+  /* } */
+
+  input[type=text]{
+    height: 5vh;
+    width: 200px;
+    margin-left: 35px ;
+    margin-top: 19px;
+    border-radius: 5px;
+    padding-left: 15px; 
+    padding: 4px;
+  }
+   
+   .container {
+    display: flex;
+    gap: 100px;
+    
+  }
+
+   /* styling the button */
+   /* button {
+    background-color: #fcfcfc;
+    padding: 14px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+    margin-left: 15px;
+    margin-top: 40px;
+  }
+
+   button:disabled {
+    pointer-events: none;
+   }
+   
+   button:hover {
+    color: #fff;
+    background-color: #5099da; 
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+   
+   button:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+  
+   */
+  
+
+   
+button {
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 1.6em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  margin-top: 30px;
+ }
+ 
+ button:disabled {
+  pointer-events: none;
+ }
+ 
+ button:hover {
+  color: #fff;
+  background-color: #5099da; 
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+ }
+ 
+ button:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
+
+
+
+
+
+  /* styling the final form */
+  .third{ 
+    width: 40%;
+    height: 50vh;
+    /* background: #ccdae6;   */
+    flex-direction: column;
+    margin-top: 1px; 
+    margin-left: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:15px;
+    box-shadow: 1px 2px 10px 0px rgba(17, 17, 17, 0.3);
+    background: linear-gradient(45deg, rgb(135, 140, 161) 0%,rgb(239, 240, 243) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bc635', endColorstr='#c0ea67',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  } 
+   /* adding style for the form heading */
+  .one{
+    font-size: 23px;
+  }
+  
+
+.detail {
+  margin-top: 10px;
+}
+.hh{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 9vh;
+  margin-left: 500px;
+  font-size: 25px;
+  /* background-color:#1A1A1A; */
+  margin-top: 10px;
+  padding: 40px;
+
+}
+
+
+.va{
+    /* padding: 50px; */
+    padding: 16px;
+    /* margin-top: 10px; */
+
+}
+
+
+footer{
+  background-color: #183955;
+  height: 55vh;
+  color: #eceaea;
+}
+
+.three{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 15vh;
+  margin-left: 450px;
+  
+  font-size: 20px;
+
+}
+
+.con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 5vh;
+  margin-left: 350px;
+  /* background-color: #5b5fc7; */
+  font-size: 20px;
+}
+
+.phone
+{
+width: 5%;
+display: flex;
+justify-content: right;
+align-items:right ;
+/* float: right; */
+height: 6vh;
+/* margin: 28px; */
+margin-top: 15px;
+margin-left: 300px;
+
+}
+/* giving height and width to phone img */
+.phone img
+{
+margin-left: 20px;
+
+} 
+
+.four{
+  width: 10%;
+display: flex;
+justify-content: left;
+align-items: left;
+/* float: right; */
+height: 9vh;
+/* margin: 28px; */
+margin-top: -30px;
+margin-left: 400px;
+/* background-color: #5b5fc7; */
+}
+
+
+.mail
+{
+width: 5%;
+display: flex;
+justify-content: right;
+align-items:right ;
+/* float: right; */
+height: 6vh;
+/* margin: 28px; */
+margin-top: 15px;
+margin-left: 300px;
+
+}
+/* giving height and width to phone img */
+.mail img
+{
+margin-left: 20px;
+
+} 
+
+.five{
+  width: 10%;
+display: flex;
+justify-content: left;
+align-items: left;
+/* float: right; */
+height: 5vh;
+/* margin: 28px; */
+margin-top: -30px;
+margin-left: 400px;
+/* background-color: #5b5fc7; */
+}
+
+.vl {
+  border-left: 4px solid rgb(209, 216, 209);
+  height: 25vh;
+  margin-top: -160px;
+margin-left: 650px;
+}
+
+.setnav{
+  width: 10%;
+
+/* float: right; */
+height: 15vh;
+/* margin: 28px; */
+margin-top: -150px;
+margin-left: 750px;
+}
+
+.setnav a{
+  color: #eceaea;
+}
+
+
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.icon img{
+  height: 6vh;
+  width: 40px;
+}
+
+

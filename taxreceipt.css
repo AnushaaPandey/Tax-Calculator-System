@@ -1,0 +1,277 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+
+}
+/* nav bar sizing */
+.nav
+{
+height: 75px;
+width: 100%;
+float: right;
+display: flex;
+align-content: space-around;
+justify-content: right;
+align-items: center;
+background-color: #183955;
+/* position: fixed; */
+}
+ 
+/* style of the logo */
+.logo
+{
+width: 35%;
+display: flex;
+justify-content: center;
+align-items:center ;
+float: left;
+height: 5px;
+/* margin: 28px; */
+margin-top: 2px;
+margin-left: -70px;
+padding: -5px;
+padding-right: 10px;
+}
+
+.logo img
+{
+width:60%;
+height:55px;
+}
+
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    float: left;
+    width: 370px;
+    margin: auto;
+    margin-right: 100px;
+     /* background-color: aqua;  */
+  }
+
+ .search {
+
+   display: flex;
+   justify-items: left;
+   align-items: left;
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
+  } 
+  .input {
+    max-width: 160px;
+    background-color: #f5f5f5;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+    /* margin-left: 250px; */
+    align-items: left;
+   
+  }
+  
+ 
+
+
+  input:focus {
+    border-bottom: 2px solid #5b5fc7;
+    border-radius: 4px 4px 2px 2px;
+  }
+  
+  input:hover {
+    outline: 1px solid lightgrey;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: center;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+
+  a:hover {
+    opacity: 0.6;
+  }
+
+
+
+
+
+  
+
+  .dropbtn {
+    background-color: #183955; 
+  
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+   margin-right: 60px;
+   margin-top: 10px;
+  
+ }
+ 
+ .dropbtn:hover, .dropbtn:focus {
+   background-color: #1b4969;
+ }
+ 
+ .dropdown {
+   position: relative;
+   display: inline-block;
+   margin-right: 20px;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 130px;
+   overflow: auto;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+  
+ }
+ 
+
+ .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+ 
+ .dropdown a:hover {background-color: #ddd;}
+ 
+ .show {display: block;}
+
+
+
+
+  
+
+.info{
+    background: #ccdae6; 
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* .one{
+    /* background-color: bisque;  */
+    /* text-align: left; */
+    /* margin-left: 550px;
+    margin-top: -100px;
+    width: 15%;
+    height: 5vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    background-color: #5b5fc7;
+} */ 
+
+.one{
+    /* background-color: bisque;  */
+    text-align: left;
+    margin-left: 600px;
+    margin-top: 20px;
+    width: 15%;
+    height: 10vh;
+    display: flex; 
+    justify-content: center;
+    align-items:end;
+   
+    
+}
+
+
+.two{
+    width: 15%;
+    height: 15vh;
+    
+    margin-left: 400px;
+    margin-top: 60px;
+}
+
+
+
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    height: 250px;
+    width: 400px;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+}
+th {
+    
+    color: white;
+}
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+
+
+
+button {
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 620px;
+  margin-top: 30px;
+  min-height: 3em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+ }
+ 
+ button:disabled {
+  pointer-events: none;
+ }
+ 
+ button:hover {
+  color: #fff;
+  background-color: #5099da; 
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+ }
+ 
+ button:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
