@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <title>Admin</title>
+</head>
+
+    <!-- navigation bar -->
+    <section class="nav">
+        <div class="logo">
+            <img src="splash1.png" alt="Splash Screen">
+        </div>
+
+        <div class="search">
+            <input class="input" name="text" placeholder="Search..." type="search">
+            </div>
+            <!-- user img -->
+    
+    
+            <div class="dropdown">
+              <img onclick="myFunction()" class="dropbtn" src="user.png" alt="User">
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Tax Report</a>
+                  <a href="#">Login</a>
+                  <a href="#">Logout</a>
+                </div>
+              </div>
+    
+              <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+                </script>
+        </section>
+        <body>
+            <ul>
+              <li><a href="admin.html">Admin Dashboard</a></li><br><hr><br>
+              <li><a href="home.html">User Dashboard</a></li><br> <hr>
+            </ul>
+            
+            
+            <div class="second">
+            
+              <br><b>Total User</b>
+            </div>
+          </div>
+            <div class="third">
+            
+              <br><b>Receipt</b>
+            </div>
+          </div>
+          <div class="fourth">
+          
+             <br> <b>User Detail</b>
+            </div>
+          </div> 
+          <div class="fifth">
+            <br>
+              <b>Last Year Summary</b>
+            </div>
+          </div>
+          <div class="sixth">
+            <br>
+              <b>Latest Log</b>
+            </div>
+          </div>
+       
+
+
+          <footer>
+            <div class="three">
+                <h3>Tax Management System</h3>
+             </div>
+             <div class="con">
+                <h5>Contact Us:</h5>
+             </div>
+             <div class="phone">
+                <img src="phone2.png" alt="Call Us">
+             </div>
+             <div class = "four"> 
+               <b>+977 9861486762,<br><br>
+                977 9172648956</b>
+             </div> 
+             <div class="mail">
+              <img src="mail2.png" alt="Mail Us">
+           </div>
+             <div class = "five"> 
+              <b>tax@gmail.com </b>  
+              </div> 
+              <div class="vl"></div>
+              <div class="setnav">
+                <a href="home.html">Home</a> <br><br>
+                <a href="aboutus.html">About Us</a><br><br>
+                <a href="setting.html">Settings</a><br><br>
+            </div>
+            <div class="icon">
+              <img src="face2.png">
+              <img src="insta2.png">
+              <img src="link2.png">
+           </div>
+        </footer>
+        
+     </body>
+</html>
